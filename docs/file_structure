@@ -3,7 +3,7 @@ spotify_data_bridge/
 │
 ├── config/                  #configs & logs
 │   ├── config.py
-│   └── logging_config.py
+│   └── logging_config.yaml
 │
 ├── dags/                    # Airflow DAGs
 │   └── spotify_pipeline_dag.py
@@ -23,6 +23,9 @@ spotify_data_bridge/
 ├── src/
 │   ├── __init__.py
 │   │
+│   ├── infrastructure
+│   │   └── logging
+│   │       └── logging_config.py
 │   ├── extract/
 │   │   ├── __init__.py
 │   │   └── spotify_api.py
