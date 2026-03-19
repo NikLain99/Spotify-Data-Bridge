@@ -6,18 +6,12 @@ spotify_data_bridge/
 │   └── logging_config.yaml
 │
 ├── dags/                    # Airflow DAGs
-│   └── spotify_pipeline_dag.py
 │
 ├── dbt/                     # dbt project for data transformations
-│   ├── dbt_project.yml
-│   ├── models/
-│   │   └── spotify/
-│   │       ├── staging.sql
-│   │       └── marts.sql
-│   └── macros/
 │
 ├── docs/
 │   ├── architecture.png
+│   ├── file_structure actual
 │   └── file_structure
 │
 ├── src/
@@ -26,29 +20,17 @@ spotify_data_bridge/
 │   │   └── logging
 │   │       ├── __init__.py
 │   │       └── logging_config.py
+│   │
 │   ├── extract/
-│   │   ├── __init__.py
-│   │   └── spotify_api.py
 │   │
 │   ├── transform/
-│   │   ├── __init__.py
-│   │   ├── spotify_transformer.py  # local transformer (for testing/debugging)
-│   │   └── dbt_runner.py          # calling dbt models
 │   │
 │   ├── load/
-│   │   ├── __init__.py
-│   │   ├── s3_loader.py
-│   │   └── snowflake_loader.py
 │   │
 │   ├── utils/
-│   │   ├── __init__.py
-│   │   ├── helpers.py
-│   │   └── decorators.py
 │   │
 │   ├── tests/
-│   │   ├── test_spotify_api.py
-│   │   ├── test_transformer.py
-│   │   └── test_load.py
+│   │   └── test_logging.py
 │   │
 │   └── main.py
 │
