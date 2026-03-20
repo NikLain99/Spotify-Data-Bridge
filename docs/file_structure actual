@@ -2,8 +2,8 @@ spotify_data_bridge/
 ├──.venv
 │
 ├── config/                  #configs & logs
-│   ├── config.py
-│   └── logging_config.yaml
+│   ├── .env
+│   └── logging.yaml
 │
 ├── dags/                    # Airflow DAGs
 │
