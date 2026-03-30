@@ -20,8 +20,10 @@ def setup_logging(yaml_path="config/logging.yaml", batch_id="N/A"):
         config = yaml.safe_load(f)
         logging.config.dictConfig(config)
     
-    logger = logging.getLogger()
+    logger = logging.getLogger("src")
     context_filter = ContextFilter(batch_id=batch_id)
+    logger.addFilter(context_filter)
+
     for handler in logger.handlers:
         handler.addFilter(context_filter)
 
