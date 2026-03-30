@@ -12,7 +12,8 @@ spotify_data_bridge/
 ├── docs/
 │   ├── architecture.png
 │   ├── file_structure actual
-│   └── file_structure
+│   ├── file_structure
+│   └── spotify_api flow.png
 │
 ├── src/
 │   │
